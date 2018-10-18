@@ -51,6 +51,6 @@ class InteractiveRecord
     sql = "SELECT * FROM #{self.table_name} WHERE name = '#{name_to_find}'"
 
 
-    self.new(DB[:conn].execute(sql))
+    DB[:conn].execute(sql)
   end
 end
