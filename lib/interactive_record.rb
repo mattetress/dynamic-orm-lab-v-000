@@ -11,4 +11,5 @@ class InteractiveRecord
   def self.column_names
     columns = []
     sql = "PRAGMA table_info (#{table_name})"
+    binding.pry 
 end
