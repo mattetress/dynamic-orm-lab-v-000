@@ -53,7 +53,10 @@ class InteractiveRecord
   end
 
   def self.find_by(option)
-    binding.pry 
+    option.each do |k, v|
+      sql = "SELECT * FROM #{self.table_name} WHERE #{k} = '#{v}'"
+    end
+    DB[:conn].execute(sql)      
   end
 
 end
