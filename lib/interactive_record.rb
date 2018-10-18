@@ -55,5 +55,5 @@ class InteractiveRecord
   def self.find_by(option)
     binding.pry 
   end
-  
+
 end
