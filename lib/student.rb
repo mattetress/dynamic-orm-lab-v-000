@@ -4,4 +4,6 @@ require 'interactive_record.rb'
 
 class Student < InteractiveRecord
 
+  def initialize(options = {})
+
 end
