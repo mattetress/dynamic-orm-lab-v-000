@@ -57,7 +57,7 @@ class InteractiveRecord
     option.each do |k, v|
       sql = "SELECT * FROM #{self.table_name} WHERE #{k} = '#{v}'"
       info = DB[:conn].execute(sql)
-    end    
+    end
     info
   end
 
