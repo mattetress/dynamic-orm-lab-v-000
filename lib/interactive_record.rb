@@ -17,4 +17,6 @@ class InteractiveRecord
     end
     columns
   end
+
+  
 end
