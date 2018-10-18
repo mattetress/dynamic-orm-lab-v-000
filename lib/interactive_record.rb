@@ -12,4 +12,5 @@ class InteractiveRecord
     columns = []
     sql = "PRAGMA table_info (#{table_name})"
     binding.pry 
+  end
 end
